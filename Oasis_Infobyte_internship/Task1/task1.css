@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+    margin: 0 auto;
+}
+
+
+.logo{
+    margin: 0px 16px 8px 0px;
+    width: fit-content;
+    padding: 0px 15px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 48px;
+    color: rgb(247, 171, 32);
+}
+
+.navitems{
+  flex: 1;
+ 
+}
+
+.navlinks{
+    list-style: none;
+    margin: 0px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navlinks a{
+    text-decoration: none;
+    color: rgb(81, 80, 80);
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 18px;
+    font-family:sans-serif;
+}
+
+
+
+.navlinks a:hover{
+    color: rgb(247, 171, 32) ;
+}
+
+
+.carousel-container {
+    width:100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #f8c593;
+    padding: 0 0 40px 0;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+
+}
+
+
+.content{
+    padding: 12px;
+    width: 600px;
+}
+
+
+.content h1{
+    font-size: 48px;
+    margin: 0 0 8px;
+    font-weight: 300;
+    text-align: start;
+}
+
+.content h2{
+    font-size: 30px;
+    margin: 0 0 8px;
+    font-weight: 300;
+    text-align: start;
+}
+
+
+.content p{
+    font-size: 20px;
+    margin: 0 0 16px;
+    text-align: start;
+    line-height: 30px;
+}
+
+.image img{
+    width: 580px;
+    height: 580px;
+    
+}
+
+
+/* Radio button navigation */
+input[type="radio"] {
+    display: none;
+}
+
+.carousel-nav {
+    text-align: center;
+}
+
+.carousel-nav label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #464646;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.carousel-nav label:hover{
+    background-color: rgb(23, 21, 21);
+}
+
+#slide1:checked ~ .carousel-wrapper {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel-wrapper {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-wrapper {
+    transform: translateX(-200%);
+}
+
+section{
+    padding: 48px 12px;
+    margin:0 auto;
+}
+
+.categorymain,.featuredmain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 0;
+}
+
+
+.categorymain h1,.featuredmain h1{
+    font-size: 48px;
+    margin: 0 0 8px;
+    font-weight: 300;
+  
+}
+
+
+.categorymain p, .featuredmain p{
+    font-size: 20px;
+    margin: 0 0 16px;
+    line-height: 30px;
+    max-width: 900px;
+    
+}
+
+.category{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.categorypart{
+    margin: 16px 0 0;
+    padding: 48px;
+}
+
+.categorypart h5{
+    font-size: 22px;
+    margin: 16px 0px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.categorypart p{
+    text-align: center;
+}
+
+.categorypart button{
+    background-color: #59ab6e;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+
+.categorypart img{
+    border-radius: 50%;
+    border: 1px solid #dee2e6;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
+
+#container_featured{
+    background-color: #E9EEf5;
+}
+
+.featured{
+    display: flex;
+    justify-content: center;
+}
+
+.featuredpart{
+    margin: 0 0 24px;
+    padding: 0 12px;
+    height: fit-content;
+    width: 410px;
+}
+
+.featuredpart img{
+    width: 100%;
+    height: 310px;
+}
+
+
+.featuredpart .cardbody{
+    background-color: white;
+    padding: 16px;
+    height: fit-content;
+}
+.featuredpart h1{
+font-size: 30px;
+
+}
+
+.featuredpart p{
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+
+#container_ourbrands{
+    display: flex;
+    flex-direction: column;
+}
+
+.brandcontent{
+    text-align: center;
+}
+
+.brandcontent h1{
+    font-size: 48px;
+    font-weight: 300;
+
+}
+
+
+.brandcontent  p{
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.brandlables{
+    text-align: center;
+
+}
+
+
+.brandlables img{
+    width: 110px;
+    height: 75px;
+   margin: 20px;
+ 
+}
+
+
